@@ -64,6 +64,11 @@ def detect_country(text):
 #         🔗 {t['url']}"""
         
 #     send_message(message)
+import logging
+
+logging.basicConfig(filename="bot.log", level=logging.INFO)
+
+logging.info("Bot started")
 
 def run_bot():
     tweets = fetch_rss()
